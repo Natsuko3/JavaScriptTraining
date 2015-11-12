@@ -152,7 +152,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
       //
       // 'change me!' を document.querySelector('#firebrick') に
       // 書き換えてください。
-      var element = 'change me!';
+      var element = document.querySelector('#firebrick');
 
       expect(element).to.have.property(secret('vq'), secret('sveroevpx'));
 
