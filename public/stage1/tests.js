@@ -220,7 +220,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
       //
       // 'change me!' を '.js-training:nth-child(2) li'
       // に書き換えてください。
-      var selector = 'change me!';
+      var selector = '.js-training:nth-child(2) li';
 
       var element = document.querySelector(selector);
       expect(selector).to.not.have.string('#');
