@@ -111,7 +111,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('9 番の緑色の要素が1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var elements = 'change me!';
+      var elements = document.getElementsByClassName("limegreen");
 
       expect(elements).to.have.length(1);
       expect(elements[0]).to.have.property(secret('pynffAnzr'), secret('yvzrterra'));
