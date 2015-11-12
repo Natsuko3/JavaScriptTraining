@@ -298,7 +298,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('10 番の水色の要素を jQuery を使って2つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var $element = 'change me!';
+      var $element = $('.mediumturquoise');
 
       expect($element).to.be.instanceof(jQuery);
       expect($element).to.have.length(2);
