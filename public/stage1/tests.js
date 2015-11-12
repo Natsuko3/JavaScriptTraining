@@ -245,7 +245,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('12 番の紫色の要素を、属性セレクタと :nth-child(N) セレクタを使わずに1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var selector = 'change me!';
+      var selector = '.js-training:nth-of-type(2) li:last-child';
 
       var element = document.querySelector(selector);
       expect(selector).to.not.match(/\[\s*name\s*[~\|\^\$\*]?=/);
