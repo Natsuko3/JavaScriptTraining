@@ -320,7 +320,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('12 番の紫色の要素を jQuery を使って1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var $element = 'change me!';
+      var $element = $('[data-js-training="darkorchid"]');
 
       expect($element).to.be.instanceof(jQuery);
       expect($element).to.have.length(1);
