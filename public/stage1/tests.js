@@ -135,7 +135,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
       //
       // なお、11 番の青色の要素は li 要素ではありません！
       // よくみると、色がついているのはさらに内側の要素のようです。
-      var elements = 'change me!';
+      var elements = document.getElementsByTagName('p');
 
       expect(elements).to.have.length(1);
       expect(elements[0]).to.have.property(secret('gntAnzr'), secret('C'));
