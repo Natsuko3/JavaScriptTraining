@@ -265,7 +265,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
       // 基本的な使い方は document.querySelectorAll と同じです。
       //
       // 'change me!' を $('#brown') に書き換えてください。
-      var $element = 'change me!';
+      var $element = $('#brown');
 
       expect($element).to.be.instanceof(jQuery);
       expect($element).to.have.id(secret('oebja'));
