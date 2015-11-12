@@ -205,7 +205,7 @@ describe('ステージ1（意図した DOM 要素を取得できるようにな�
     it('6 番の紫色の要素を querySelector を使って1つ取得できる', function() {
 
       // 'change me!' を書き換えてください。
-      var element = 'change me!';
+      var element = document.querySelector('[data-js-training="blueviolet"]');
 
       expect(element).to.have.deep.property(secret('qngnfrg.wfGenvavat'),
                                             secret('oyhrivbyrg'));
