@@ -11,7 +11,8 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       //
       // var element = document.getElementById('firebrick');
       // element.textContent = element.textContent + element.textContent;
-      var element = 'change me!';
+      var element = document.getElementById('firebrick');
+      element.textContent = element.textContent + element.textContent;
 
 
       expect(element).to.have.property(secret('vq'), secret('sveroevpx'));
