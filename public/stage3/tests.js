@@ -11,6 +11,9 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       // var element = document.querySelector('#firebrick');
       // var ghost = document.querySelector('.firebrick-ghost');
       // element.removeChild(ghost);
+      var element = document.querySelector('#firebrick');
+      var ghost = document.querySelector('.firebrick-ghost');
+      element.removeChild(ghost);
 
 
       var firebrick = document.getElementById('firebrick');
