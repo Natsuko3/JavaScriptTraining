@@ -218,7 +218,11 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       //
       // なお、上に 20px 移動させる方法は複数ありますが、今回は top 属性を
       // 使う方法を使ってください。
-      var $element = 'change me!';
+      var $element = $('[data-js-training="darkorchid"]');
+      $element.css({
+        position: 'relative',
+        top: '-20px'
+      });
 
 
       expect($element).to.be.instanceof(jQuery);
