@@ -25,6 +25,9 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
     it('2 番の要素からインベーダー要素を除去する', function() {
 
       // ここにコードを記述してください。
+      var element = document.querySelector('#chocolate')
+      var spaceInvader = document.querySelector('.chocolate-space-invader');
+      element.removeChild(spaceInvader);
 
 
       var darkorange = document.getElementById('chocolate');
