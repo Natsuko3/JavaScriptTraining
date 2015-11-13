@@ -100,8 +100,13 @@ describe('ステージ2（意図した通りに DOM 要素の属性・テキス�
       //
       // なお、上に 20px 移動させる方法は複数ありますが、今回は top 属性を
       // 使う方法を使ってください。
-      var element = 'change me!';
+      var element = document.querySelector('[data-js-training="blueviolet"]');
+      
+      //低速
+      //element.style.position = 'relative';
+      //element.style.top = '-20px';
 
+      element.setAttribute('style', 'position: relative; top: -20px;');
 
       expect(element).to.have.deep.property(
         secret('qngnfrg.wfGenvavat'), secret('oyhrivbyrg'));
