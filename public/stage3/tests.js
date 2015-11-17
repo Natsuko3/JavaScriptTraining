@@ -102,6 +102,7 @@ describe('ステージ3（意図した通りに DOM 要素の構造を変更で�
       //
       // $('.brown-ghost').remove();
 
+      $('.brown-ghost').remove();
 
       var $brown = $('#brown');
       expect($brown.children()).to.have.length(0);
