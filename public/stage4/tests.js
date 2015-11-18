@@ -24,6 +24,10 @@ describe('ステージ4（意図通りにイベントを利用できる）', fun
       //
       // ここに上記のどちらかのコードを記述してください。
 
+      var element = document.getElementById('firebrick');
+      element.addEventListener('click', function() {
+        element.textContent = Number(element.textContent) + 1;
+      });
 
       var firebrick = document.getElementById('firebrick');
       firebrick.dispatchEvent(createClickEvent());
